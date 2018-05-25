@@ -151,6 +151,22 @@ public class BusinessServiceV1Impl
 		
 		return response;
     }
+    
+    public SellEnhancedResponse sellEnhanced(SellEnhancedRequest request) {
+    	Order o = null;
+    	try {
+			o = mgr.sellEnhanced(request.getUserID(),
+							request.getHoldingID(), request.getQuantity());
+		} catch (DAOException e) {
+			logger.debug("", e);
+		}
+
+		SellEnhancedResponse response = new SellEnhancedResponse();
+		
+		response.setOrderData(TypeFactory.toOrderData(o));
+		
+		return response;
+    }
 
     public UpdateAccountProfileResponse updateAccountProfile(UpdateAccountProfileRequest request) {
     	AccountProfile accProfile = null;
