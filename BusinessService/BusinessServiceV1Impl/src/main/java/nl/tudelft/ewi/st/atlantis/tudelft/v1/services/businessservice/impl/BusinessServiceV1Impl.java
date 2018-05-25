@@ -152,7 +152,7 @@ public class BusinessServiceV1Impl
 		return response;
     }
     
-    public SellEnhancedResponse sellEnhanced(SellEnhancedRequest request) {
+    public void sellEnhancedNULL(SellEnhancedRequest request) {
     	Order o = null;
     	try {
 			o = mgr.sellEnhanced(request.getUserID(),
