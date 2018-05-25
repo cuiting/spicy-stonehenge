@@ -1,3 +1,4 @@
+[![BCH compliance](https://bettercodehub.com/edge/badge/cuiting/spicy-stonehenge?branch=master)](https://bettercodehub.com/)
 # What is Spicy Stonehenge
 
 Spicy Stonehenge is an implementation of Apache Stonehenge [1] built on top of the Turmeric SOA platform [2]. Our goal with this project is to create a use case that researchers can use to validate their research and compare results by using a common platform.
